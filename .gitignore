@@ -1,0 +1,15 @@
+# Virtual environment (recreate it with: python3 -m venv .venv)
+.venv/
+
+# Secrets / local settings
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store

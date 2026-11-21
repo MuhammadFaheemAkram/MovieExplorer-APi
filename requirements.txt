@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------------------
+# Project dependencies (pinned so everyone gets the exact same versions).
+# Install with:  pip install -r requirements.txt
+# ---------------------------------------------------------------------------
+
+# Web framework. "[standard]" also installs uvicorn (the server), httpx, and the
+# `fastapi` command line tool (`fastapi dev`).
+fastapi[standard]==0.162.2
+uvicorn==0.54.0
+
+# ORM (Object Relational Mapper): maps Python classes <-> database tables.
+SQLAlchemy==2.1.8
+
+# PostgreSQL driver (version 3). "[binary]" ships a pre-compiled C library.
+psycopg[binary]==3.3.8
+
+# Database migrations (version control for your database schema).
+alembic==1.20.1
+
+# Data validation + JSON (de)serialization for request/response bodies.
+pydantic==2.14.3
+
+# Reads settings from environment variables / the .env file.
+pydantic-settings==2.16.2
+
+# Testing.
+pytest==9.2.0
+httpx==0.28.1
